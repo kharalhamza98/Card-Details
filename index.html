@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Interactive Card</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="leftSide">
+        <div class="cards">
+          <div class="frontCard">
+            <div class="logoDiv">
+              <img class="cardLogo" src="images/card-logo.svg" alt="" />
+            </div>
+            <div class="cardNumDisplayDiv">
+              <p class="cardNumDisplay">0000 0000 0000 0000</p>
+            </div>
+            <div class="rowDisplays">
+              <div class="cardNameDisplayDiv">
+                <p class="cardNameDisplay">JANE APPLESEED</p>
+              </div>
+              <div class="cardDateDisplayDiv">
+                <p class="cardDateDisplay">
+                  <span class="cardMonthDisplay">00</span>/<span
+                    class="cardYearDisplay"
+                    >00</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="backCard">
+            <div class="cvcDiv">
+              <p class="cardCvcDisplay">000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rightSide">
+        <div class="thankYouPage hidden">
+          <div class="imgDiv">
+            <img src="images/icon-complete.svg" alt="" />
+          </div>
+          <div class="thankYouHeaderDiv">
+            <h1>THANK YOU!</h1>
+          </div>
+          <div class="thankYouTextDiv">
+            <p class="thankYouText">We've added your card details</p>
+          </div>
+          <button class="continue">Continue</button>
+        </div>
+        <div class="cardInputs">
+          <form action="">
+            <div class="columnInputs">
+              <div class="cardNameDiv">
+                <label for="cardName"
+                  >CARDHOLDER NAME <br />
+                  <span class="cardNameError"> Enter your name</span></label
+                >
+                <input
+                  type="text"
+                  name="cardName"
+                  id="cardName"
+                  placeholder="e.g Jane Appleseed"
+                />
+              </div>
+              <div class="cardNumDiv">
+                <label for="cardNum"
+                  >CARD NUMBER <br />
+                  <span class="cardNumberError">
+                    Enter your card number</span
+                  ></label
+                >
+                <input
+                  type="text"
+                  name="cardNum"
+                  id="cardNum"
+                  placeholder="e.g. 1234 5678 9123 0000"
+                />
+              </div>
+            </div>
+            <div class="rowInputs">
+              <div class="cardMonthYearDiv">
+                <label for="cardMonth cardYear"
+                  >EXP. DATE <br />
+                  (MM/YY) <br />
+                  <span class="cardDateError">
+                    Enter the expiration date</span
+                  ></label
+                >
+                <div class="cardMonthYearInputDiv">
+                  <input
+                    type="number"
+                    name="cardMonth"
+                    id="cardMonth"
+                    placeholder="MM"
+                  />
+                  <input
+                    type="number"
+                    name="cardYear"
+                    id="cardYear"
+                    placeholder="YY"
+                  />
+                </div>
+              </div>
+
+              <div class="cardCvcDiv">
+                <div class="cardCvcColumnDiv">
+                  <label for="cardCvc"
+                    >CVC <br />
+                    <span class="cardCvcError"> Enter the CVC number</span>
+                  </label>
+                  <input
+                    type="number"
+                    name="cardCvc"
+                    id="cardCvc"
+                    placeholder="e.g 123"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <button class="confirm">Confirm</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
